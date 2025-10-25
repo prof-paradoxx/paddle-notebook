@@ -11,7 +11,7 @@
 #
 # We select a PyTorch image with CUDA 12.1, which is fully compatible
 # with the A6000 (Ampere architecture).
-FROM paperspace/pytorch:2.1.0-cuda12.1-py3.10
+FROM paperspace/gradient-base:pt211-tf215-cudatk120-py311-20240202
 
 # 2. Switch to the root user to install system dependencies.
 # The 'paperspace' user (the default) doesn't have sudo privileges.
